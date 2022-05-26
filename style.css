@@ -11,3 +11,16 @@ body {
   min-height: 100vh;
   background: #333;
 }
+
+.safari {
+  position: relative;
+  width: 400px;
+  height: 400px;
+  background: #fff;
+  border-radius: 80px;
+}
+.circle_lines {
+  position: absolute;
+  inset: 35px;
+  background: linear-gradient(#1ec9ff, #2971e7);
+}
