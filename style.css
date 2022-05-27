@@ -9,7 +9,7 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background: #333;
+  background: #f8f8f8;
 }
 
 .safari {
@@ -18,6 +18,8 @@ body {
   height: 400px;
   background: #fff;
   border-radius: 80px;
+  box-shadow: 0 30px 10px #ccc, 0 30px 30px rgba(0, 0, 0, 0.25),
+    0 28px 0 rgba(0, 0, 0, 0.5), 0 50px 60px rgba(0, 0, 0, 0.1);
 }
 .circle_lines {
   position: absolute;
@@ -27,6 +29,8 @@ body {
   justify-content: center;
   align-items: center;
   background: linear-gradient(#1ec9ff, #2971e7);
+  box-shadow: 0 -5px 0 5px rgba(0, 0, 0, 0.15),
+    inset 0 10px 0 rgba(0, 0, 0, 0.1);
 }
 
 .circle_lines span {
@@ -58,10 +62,10 @@ body {
   inset: 50px;
   transform: translateX(130px) rotate(45deg);
   filter: drop-shadow(0 0 4px rgba(0, 0, 0, 0.25));
-  transition: 2s ease-in-out;
+  transition: 2s cubic-bezier(0.47, -0.48, 0.46, 1.54);
 }
 
-.niddle:hover {
+.safari:hover .niddle {
   transform: translateX(130px) rotate(405deg);
 }
 .niddle::before {
