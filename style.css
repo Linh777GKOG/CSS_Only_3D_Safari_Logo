@@ -48,3 +48,38 @@ body {
   transform-origin: 0 150px;
   transform: rotate(5deg);
 }
+
+.niddle {
+  position: absolute;
+  width: 36px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  inset: 50px;
+  transform: translateX(130px) rotate(45deg);
+  filter: drop-shadow(0 0 4px rgba(0, 0, 0, 0.25));
+  transition: 2s ease-in-out;
+}
+
+.niddle:hover {
+  transform: translateX(130px) rotate(405deg);
+}
+.niddle::before {
+  content: "";
+  position: absolute;
+  top: -150px;
+  height: 150px;
+  border-left: 18px solid transparent;
+  border-right: 18px solid transparent;
+  border-bottom: 150px solid #fb3b2e;
+}
+
+.niddle::after {
+  content: "";
+  position: absolute;
+  top: 150px;
+  height: 150px;
+  border-left: 18px solid transparent;
+  border-right: 18px solid transparent;
+  border-top: 150px solid #fff;
+}
